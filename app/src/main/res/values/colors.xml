@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#288CBA</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_layout_bg">#6AF4F6</color>
+    <color name="main_title_fg">#FFEB3B</color>
+    <!--region Rates-->
+    <color name="rates_layout_bg">#6AF4F6</color>
+    <color name="rates_text_fg">#033C3C</color>
+    <!--endregion-->
+    <!--region Calc-->
+    <color name="calc_layout_bg">#6AF4F6</color>
+    <color name="calc_tv_expression">#05177E</color>
+    <color name="calc_tv_result">#010623</color>
+    <color name="calc_btn_func">#498DC3</color>
+    <color name="calc_btn_digit">#1483DB</color>
+    <color name="calc_btn_res">#A89910</color>
+    <!--endregion-->
+
+    <!--region Rate-->
+    <color name="rate_layout_bg">#E3EDED</color>
+    <color name="rates_tv_title">#88F20E</color>
+    <!--endregion-->
+</resources>
