@@ -29,8 +29,11 @@ private List<NbuRate> nbuRates;
 
     @Override
     public void onBindViewHolder(@NonNull NbuRateViewHolder holder, int position) {
-holder.setNbuRate(nbuRates.get(position));
+        holder.setNbuRate(nbuRates.get(position));
+
+
     }
+
 
     @Override
     public int getItemCount() {

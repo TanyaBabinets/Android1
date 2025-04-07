@@ -61,7 +61,7 @@ private RecyclerView rvContainer;
             return insets;
         });
        // tvContainer=findViewById(R.id.rates_tv_container);
-        String url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=YYYYMMDD&json";
+        String url = nbuRatesUrl;
         //  https://bank.gov.ua/ua/open-data/api-dev
         pool= Executors.newFixedThreadPool(3);
 
@@ -77,7 +77,7 @@ private RecyclerView rvContainer;
            //Log.d("post", "" + getWindow().getDecorView().getWidth());//post- очередь действий
         });
         //внутр.организация контента
-        RecyclerView.LayoutManager layoutManager=new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager layoutManager=new GridLayoutManager(this, 2);
         rvContainer.setLayoutManager(layoutManager);
         nbuRateAdapter = new NbuRateAdapter(nbuRates);
         rvContainer.setAdapter(nbuRateAdapter);

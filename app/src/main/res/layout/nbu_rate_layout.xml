@@ -10,7 +10,12 @@
     android:background="@drawable/calc_btn_func"
     android:backgroundTint="@color/rates_tv_title"
     >
-
+    <TextView
+        android:id="@+id/nbu_rate_formatted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="1 DZD = 0.30 HRN" />
     <TextView
         android:id="@+id/nbu_rate_cc"
         android:layout_width="wrap_content"
@@ -29,5 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="0.30886" />
+
+
 
 </LinearLayout>

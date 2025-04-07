@@ -71,6 +71,10 @@ public class NbuRate {
     public void setExchangeDate(Date exchangeDate) {
         this.exchangeDate = exchangeDate;
     }
+
+    public String formattedRate(){
+        return String.format("1 %s=%.2f HRN", cc, rate);
+    }
 }
 
 //{
