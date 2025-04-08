@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:fromDegrees="0"
+   android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="800"
+
+/>
+
+<!--
+Анимации могут переполнять контейнер.
+Чтоб позволить видимость переполнения надо поставить в родит.контейнере clipChildren
+
+Анимации могут иметь понятие "нерухомой точки", точка которая остается на месте при анимации,
+центр ротации, например
+По умолчанию нерухомая точка - (0,0) левый верхний угол.
+-->

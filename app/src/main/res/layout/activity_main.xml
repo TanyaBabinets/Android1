@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     android:background="@color/main_layout_bg"
     tools:context=".MainActivity">
 
@@ -27,6 +28,7 @@
 
 
 <LinearLayout
+    android:id="@+id/main_ll_container"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
 android:orientation="vertical"
@@ -46,6 +48,7 @@ android:orientation="vertical"
         android:id="@+id/main_btn_rates"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:text="@string/main_btn_rates"
         />
 

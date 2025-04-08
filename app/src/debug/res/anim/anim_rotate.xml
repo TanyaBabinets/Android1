@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:fromDegrees="0"
+   android:toDegrees="360"
+    android:duration="800"
+
+/>
+
+<!--
+Анимации могут переполнять контейнер.
+Чтоб позволить видимость переполнения надо поставить в родит.контейнере clipChildren
+-->

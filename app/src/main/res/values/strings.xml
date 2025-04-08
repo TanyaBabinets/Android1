@@ -4,6 +4,13 @@
     <string name="main_tv_title">Hello, Android!</string>
     <string name="main_btn_calc">Калькулятор</string>
     <string name="main_btn_rates">Курсы валют</string>
+    <string name="main_btn_anim">Анимации</string>
+    <string name="anim_tv_title">Анимация</string>
+    <string name="anim_tv_alfa">Прозорро</string>
+    <string name="anim_tv_rotate">Поворот</string>
+    <string name="anim_tv_rotate2">Поворот2</string>
+    <string name="anim_tv_scale">Масштаб</string>
+    <string name="anim_tv_bell">Bell</string>
     <!--region Calc-->
     <string name="calc_btn_0">0</string>
     <string name="calc_btn_1">1</string>
