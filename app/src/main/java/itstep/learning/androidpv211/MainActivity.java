@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout container=findViewById(R.id.main_ll_container);
         container.addView(animButton);
 
+        findViewById (R.id.main_btn_chat).setOnClickListener(this::onChatButtonClick);
+
         }
     private void onCalcButtonClick(View view){
         startActivity( new Intent(this, CalcActivity.class));
@@ -58,5 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private void onAnimButtonClick(View view){
         startActivity( new Intent(this, AnimActivity.class));
+    }
+
+    private void onChatButtonClick(View view){
+        startActivity( new Intent(this, ChatActivity.class));
     }
 }

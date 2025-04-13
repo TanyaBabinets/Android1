@@ -48,10 +48,10 @@ public class CalcActivity extends AppCompatActivity {
         findViewById(R.id.calc_btn_8).setOnClickListener(this::OnDigitClick);
         findViewById(R.id.calc_btn_9).setOnClickListener(this::OnDigitClick);
 
-        findViewById(R.id.calc_btn_plus).setOnClickListener(this::OnOperClick);
-        findViewById(R.id.calc_btn_minus).setOnClickListener(this::OnOperClick);
-        findViewById(R.id.calc_btn_mult).setOnClickListener(this::OnOperClick);
-        findViewById(R.id.calc_btn_div).setOnClickListener(this::OnOperClick);
+//        findViewById(R.id.calc_btn_plus).setOnClickListener(this::OnOperClick);
+//        findViewById(R.id.calc_btn_minus).setOnClickListener(this::OnOperClick);
+//        findViewById(R.id.calc_btn_mult).setOnClickListener(this::OnOperClick);
+//        findViewById(R.id.calc_btn_div).setOnClickListener(this::OnOperClick);
         findViewById(R.id.calc_btn_equal).setOnClickListener(this::OnEqualClick);
 
             onClearClick(btnC);
@@ -120,17 +120,16 @@ tvResult.setText(result);
         tvResult.setText(zero);
 
     }
-    private void OnOperClick(View view){
-        String expression=tvResult.getText().toString();
-        String operator=((Button)view).getText().toString();
-
-        if (!expression.isEmpty()){
-            tvResult.setText(expression+operator);
-
-        }
+//    private void OnOperClick(View view){
+//        String expression=tvResult.getText().toString();
+//        String operator=((Button)view).getText().toString();
+//
+//        if (!expression.isEmpty()){
+//            tvResult.setText(expression+operator);
+//
+//        }
 
     }
 
 
 
-}
