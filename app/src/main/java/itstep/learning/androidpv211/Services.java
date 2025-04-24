@@ -8,18 +8,33 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class Services {
+
+    public static String readAllText(InputStream inputStream) throws IOException {
+        ByteArrayOutputStream byteBuilder = new ByteArrayOutputStream();
+        byte[] buffer = new byte[8192];
+        int len;
+        while( ( len = inputStream.read( buffer ) ) > 0 ) {
+            byteBuilder.write( buffer, 0, len );
+        }
+        String charsetName = StandardCharsets.UTF_8.name();
+        String data = byteBuilder.toString( charsetName );
+        byteBuilder.close();
+        return data;
+    }//читает поток Stream до конца и перетворюе зчитани данные в строку String
     public static String fetchUrl(String href){
+        //передаем адрес href и возвращает тело как строку String
         try {
             URL url = new URL( href );
             InputStream urlStream = url.openStream();   // GET-request
-            ByteArrayOutputStream byteBuilder = new ByteArrayOutputStream();
-            byte[] buffer = new byte[8192];
-            int len;
-            while( ( len = urlStream.read( buffer ) ) > 0 ) {
-                byteBuilder.write( buffer, 0, len );
-            }
-            String charsetName = StandardCharsets.UTF_8.name();
-            String data = byteBuilder.toString( charsetName );
+//            ByteArrayOutputStream byteBuilder = new ByteArrayOutputStream();
+//            byte[] buffer = new byte[8192];
+//            int len;
+//            while( ( len = urlStream.read( buffer ) ) > 0 ) {
+//                byteBuilder.write( buffer, 0, len );
+//            }
+//            String charsetName = StandardCharsets.UTF_8.name();
+      //      String data = byteBuilder.toString( charsetName );
+            String data = readAllText(urlStream );
             urlStream.close();
             return data;
         }

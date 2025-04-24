@@ -9,9 +9,16 @@
     <string name="chat_tv_title">Chat4Fun</string>
     <string name="chat_tv_author">Author</string>
     <string name="chat_author_hint">Your nikname</string>
+    <string name="chat_author_remember">Save</string>
     <string name="chat_send_hint">SEND</string>
     <string name="chat_message_hint">Enter message</string>
     <string name="chat_content_hint">Latest messages</string>
+    <string name="chat_msg_no_author">Enter your nickname</string>
+    <string name="chat_msg_no_text">Enter your message</string>
+    <string name="chat_msg_no_send">Sending is cancelled</string>
+    <string name="chat_msg_no_send_btn">OK</string>
+
+
     <string name="anim_tv_title">Анимация</string>
     <string name="anim_tv_alfa">Прозорро</string>
     <string name="anim_tv_rotate">Поворот</string>
