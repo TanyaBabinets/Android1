@@ -38,7 +38,8 @@
     <string name="calc_btn_9">9</string>
     <string name="calc_btn_backspase">\u232B</string>
     <string name="calc_btn_sqr">&#x1D465;\u00B2</string>
-    <string name="calc_btn_sqrt">\u221A&#x1D465;\u0305</string>
+<!--    <string name="calc_btn_sqrt">\u221A&#x1D465;\u0305</string>-->
+    <string name="calc_btn_sqrt">\u221A</string>
     <string name="calc_btn_inv">\u00B9/&#x1D465;</string>
     <string name="calc_btn_div">\u00F7</string>
     <string name="calc_btn_mult">\u00D7</string>
@@ -46,9 +47,10 @@
     <string name="calc_btn_minus">\u2212</string>
     <string name="calc_btn_plusminus">\u00B1</string>
     <string name="calc_btn_coma">,</string>
-    <string name="calc_btn_ce">CE</string>
+    <string name="calc_btn_ce">E</string>
     <string name="calc_btn_c">C</string>
     <string name="calc_btn_equal">=</string>
+    <string name="calc_btn_percent">%</string>
 
 
     <!--endregion-->

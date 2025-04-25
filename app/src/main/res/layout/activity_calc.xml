@@ -52,7 +52,7 @@
         android:orientation="horizontal">
 
        <Button
-           android:id="@+id/calc_btn_func"
+           android:id="@+id/calc_btn_percent"
          style="@style/calc_btn_func"
            android:text="%"
           />
@@ -70,7 +70,7 @@
             android:id="@+id/calc_btn_backspase"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_backspase"
-            />
+          />
 
     </LinearLayout>
     <LinearLayout
@@ -90,13 +90,15 @@
             android:text="@string/calc_btn_sqr"
             />
         <Button
+            android:id="@+id/btnSqrt"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_sqrt"
-            />
+            android:onClick="OnRootClick" />
         <Button
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_div"
-            />
+            android:onClick="OnOperClick" />
+
 
     </LinearLayout>
     <LinearLayout
@@ -124,7 +126,8 @@
             android:id="@+id/calc_btn_mult"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_mult"
-            />
+            android:onClick="OnOperClick" />
+
 
     </LinearLayout>
     <LinearLayout
@@ -152,7 +155,8 @@
             android:id="@+id/calc_btn_plus"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_plus"
-            />
+            android:onClick="OnOperClick" />
+
 
     </LinearLayout>
     <LinearLayout
@@ -180,7 +184,8 @@
             android:id="@+id/calc_btn_minus"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_minus"
-            />
+            android:onClick="OnOperClick"
+        />
 
     </LinearLayout>
     <LinearLayout

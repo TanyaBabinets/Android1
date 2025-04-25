@@ -91,7 +91,7 @@ public class ChatActivity extends AppCompatActivity {
             return insets;
         });
         pool= Executors.newFixedThreadPool(3);
-        updateChat();
+    //    updateChat();
         etAuthor=findViewById((R.id.chat_et_author));
         etAuthor.setText( loadAuthor());//если есть имя то подставится
         etMessage=findViewById((R.id.chat_et_message));

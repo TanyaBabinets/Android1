@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -36,10 +38,11 @@
         android:text="3+9="
         />
 </LinearLayout>
+
 <TextView
 android:id="@+id/calc_tv_result"
 android:layout_width="0dp"
-    android:layout_weight="2"
+    android:layout_weight="1"
 android:layout_height="wrap_content"
 android:layout_marginHorizontal="15dp"
 android:layout_marginTop="5dp"
@@ -54,14 +57,16 @@ android:text="27"
     </LinearLayout>
 
 
-
+<!--кнопки-->
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+    android:layout_height="0dp"
+    android:layout_weight="1"
     android:layout_margin="5dp"
     android:orientation="vertical">
 
-
+<!--1 row-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -69,7 +74,7 @@ android:text="27"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/calc_btn_func"
+            android:id="@+id/calc_btn_percent"
             style="@style/calc_btn_func"
             android:text="%"
             />
@@ -78,6 +83,7 @@ android:text="27"
             android:id="@+id/calc_btn_div"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_div"
+            android:onClick="OnOperClick"
             />
         <Button
             android:id="@+id/calc_btn_7"
@@ -102,6 +108,8 @@ android:text="27"
             />
 
     </LinearLayout>
+
+<!--    2 row-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -116,6 +124,7 @@ android:text="27"
             android:id="@+id/calc_btn_mult"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_mult"
+            android:onClick="OnOperClick"
             />
         <Button
             android:id="@+id/calc_btn_4"
@@ -139,6 +148,7 @@ android:text="27"
             android:text="@string/calc_btn_c"
             />
     </LinearLayout>
+<!--    3 row-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -154,6 +164,7 @@ android:text="27"
             android:id="@+id/calc_btn_minus"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_minus"
+            android:onClick="OnOperClick"
             />
         <Button
             android:id="@+id/calc_btn_1"
@@ -175,9 +186,8 @@ android:text="27"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_ce"
             />
-
-
     </LinearLayout>
+<!--    4 строка-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -192,6 +202,7 @@ android:text="27"
             android:id="@+id/calc_btn_plus"
             style="@style/calc_btn_func"
             android:text="@string/calc_btn_plus"
+            android:onClick="OnOperClick"
             />
         <Button
             android:id="@+id/calc_btn_plusminus"
